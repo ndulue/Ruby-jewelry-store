@@ -95,11 +95,11 @@ Route::get('/cart',[
 ]);
 
 Route::post('/cart',[
-    'uses' => 'CartController@addCart',
+    'uses' => 'CartController@postCart',
     'as' => 'cart.add'
 ]);
 
-Route::post('/cart',[
+Route::delete('/cart',[
     'uses' => 'CartController@deleteCart',
     'as' => 'cart.delete'
 ]);
